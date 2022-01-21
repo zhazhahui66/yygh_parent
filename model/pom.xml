@@ -8,33 +8,24 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>model</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>model</name>
+    <description>model</description>
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <!--mybatis-plus-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <scope>provided </scope>
         </dependency>
-        <!--swagger-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <scope>provided </scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>easyexcel</artifactId>
             <scope>provided </scope>
         </dependency>
         <dependency>
@@ -42,10 +33,30 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
             <scope>provided </scope>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>easyexcel</artifactId>-->
+<!--            <scope>provided </scope>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.apache.poi</groupId>-->
+<!--                    <artifactId>poi-ooxml-schemas</artifactId>-->
+<!--                </exclusion>-->
+<!--                <exclusion>-->
+<!--                    <groupId>cglib</groupId>-->
+<!--                    <artifactId>cglib</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+
+        <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <scope>provided </scope>
+        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <scope>provided </scope>
+            <artifactId>easyexcel</artifactId>
         </dependency>
     </dependencies>
 </project>

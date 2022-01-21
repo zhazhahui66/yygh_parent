@@ -11,13 +11,22 @@
 
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>service_hosp</module>
+        <module>service_user</module>
+        <module>service_cmn</module>
+    </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
     <dependencies>
-
+  <!--      <dependency>
+            <groupId>com.xxxx</groupId>
+            <artifactId>model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>-->
         <!--web-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,6 +62,27 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.xxxx</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.xxxx</groupId>
+            <artifactId>service_util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xxxx</groupId>
+            <artifactId>common_utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.xxxx</groupId>
+            <artifactId>model</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
     <build>
