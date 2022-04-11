@@ -32,6 +32,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/hosp")
 @Api(value = "api接口")
+
 public class ApiController {
     @Autowired
     private HospitalService hospitalService;

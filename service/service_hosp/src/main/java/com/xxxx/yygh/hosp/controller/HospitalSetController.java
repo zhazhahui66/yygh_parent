@@ -8,6 +8,7 @@ import com.xxxx.yygh.hosp.service.HospitalSetService;
 import com.xxxx.yygh.hosp.utils.MD5;
 import com.xxxx.yygh.model.hosp.HospitalSet;
 import com.xxxx.yygh.vo.hosp.HospitalSetQueryVo;
+import com.xxxx.yygh.vo.order.SignInfoVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Delete;
@@ -17,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Random;
-@CrossOrigin
+
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
 @Api(tags = "医院设置管理")
@@ -134,7 +135,11 @@ public class HospitalSetController {
         String hoscode = hospitalSet.getHoscode();
         //todo 发送短信
         return Result.ok();
+    }
 
-
+    @ApiOperation(value = "获取医院签名信息")
+    @GetMapping("/inner/getSignInfo/{hoscode}")
+    public SignInfoVo getSignInfo(@PathVariable("hoscode") String hoscode){
+        return hospitalSetService.getSignInfoVo(hoscode);
     }
 }

@@ -1,0 +1,61 @@
+2022-03-30 17:28:17.753 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.21.Final
+2022-03-30 17:28:17.774 [restartedMain] INFO  com.atguigu.hospital.ManageApplication - Starting ManageApplication on vdeMacBook-Air.local with PID 90266 (/Users/v/IdeaProjects/yygh_parent/hospital-manage/target/classes started by v in /Users/v/IdeaProjects/yygh_parent)
+2022-03-30 17:28:17.775 [restartedMain] INFO  com.atguigu.hospital.ManageApplication - The following profiles are active: dev
+2022-03-30 17:28:17.803 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-30 17:28:17.803 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-30 17:28:18.463 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9998 (http)
+2022-03-30 17:28:18.466 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9998"]
+2022-03-30 17:28:18.467 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-30 17:28:18.467 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-03-30 17:28:18.494 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-30 17:28:18.494 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 690 ms
+2022-03-30 17:28:18.577 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Starting...
+2022-03-30 17:28:18.911 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Start completed.
+2022-03-30 17:28:19.141 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-03-30 17:28:19.178 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-03-30 17:28:19.194 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-03-30 17:28:19.281 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-03-30 17:28:19.289 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-03-30 17:28:19.305 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-03-30 17:28:19.314 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9998"]
+2022-03-30 17:28:19.324 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9998 (http) with context path ''
+2022-03-30 17:28:19.325 [restartedMain] INFO  com.atguigu.hospital.ManageApplication - Started ManageApplication in 1.848 seconds (JVM running for 2.319)
+2022-03-30 17:28:51.136 [http-nio-9998-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-30 17:28:51.136 [http-nio-9998-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-03-30 17:28:51.140 [http-nio-9998-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-03-30 17:28:54.920 [http-nio-9998-exec-10] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密前：14e1b600b1fd579f47433b88e8d85291
+2022-03-30 17:28:54.921 [http-nio-9998-exec-10] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密后：c56d0e9a7ccec67b4ea131655038d604
+2022-03-30 17:28:54.942 [http-nio-9998-exec-10] INFO  com.atguigu.hospital.util.HttpRequestHelper - --> 发送请求：post data sign=c56d0e9a7ccec67b4ea131655038d604&hoscode=1000_01&timestamp=1648632534902&
+2022-03-30 17:29:00.074 [http-nio-9998-exec-9] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密前：14e1b600b1fd579f47433b88e8d85291
+2022-03-30 17:29:00.075 [http-nio-9998-exec-9] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密后：c56d0e9a7ccec67b4ea131655038d604
+2022-03-30 17:29:00.090 [http-nio-9998-exec-9] INFO  com.atguigu.hospital.util.HttpRequestHelper - --> 发送请求：post data limit=10&sign=c56d0e9a7ccec67b4ea131655038d604&page=1&hoscode=1000_01&timestamp=1648632540058&
+2022-03-30 17:29:06.234 [http-nio-9998-exec-7] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密前：14e1b600b1fd579f47433b88e8d85291
+2022-03-30 17:29:06.236 [http-nio-9998-exec-7] INFO  com.atguigu.hospital.util.HttpRequestHelper - 加密后：c56d0e9a7ccec67b4ea131655038d604
+2022-03-30 17:29:06.250 [http-nio-9998-exec-7] INFO  com.atguigu.hospital.util.HttpRequestHelper - --> 发送请求：post data limit=10&sign=c56d0e9a7ccec67b4ea131655038d604&page=1&hoscode=1000_01&timestamp=1648632546220&
+2022-03-30 17:29:53.806 [restartedMain] INFO  com.xxxx.yygh.cmn.ServiceUserApplication - The following profiles are active: dev
+2022-03-30 17:29:54.500 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-30 17:29:54.500 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-03-30 17:29:54.531 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29ms. Found 3 MongoDB repository interfaces.
+2022-03-30 17:29:54.539 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-30 17:29:54.540 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-03-30 17:29:54.550 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xxxx.yygh.hosp.repository.DepartmentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-03-30 17:29:54.551 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xxxx.yygh.hosp.repository.HospitalRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-03-30 17:29:54.551 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.xxxx.yygh.hosp.repository.ScheduleRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-03-30 17:29:54.552 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2022-03-30 17:29:54.687 [restartedMain] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=6eda1e3a-fe1d-31e1-b430-ff39964a3637
+2022-03-30 17:29:54.864 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:29:54.893 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:29:54.899 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-03-30 17:29:55.103 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8203 (http)
+2022-03-30 17:29:55.107 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8203"]
+2022-03-30 17:29:55.108 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-03-30 17:29:55.108 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-03-30 17:29:55.152 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-03-30 17:29:55.152 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1336 ms
+2022-03-30 17:29:55.259 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2022-03-30 17:29:55.271 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-30 17:54:45.224 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-03-30 17:54:45.226 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Shutdown initiated...
+2022-03-30 17:54:45.228 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - GuliHikariPool - Shutdown completed.

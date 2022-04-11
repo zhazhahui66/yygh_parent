@@ -18,13 +18,13 @@ import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 import java.lang.reflect.Method;
+import java.net.UnknownHostException;
 import java.time.Duration;
 
 @Configuration
 @EnableCaching
 public class RedisConfig {
-
-    /**
+/*     *
      * 自定义key规则
      * @return
      */
@@ -44,11 +44,11 @@ public class RedisConfig {
         };
     }
 
-    /**
-     * 设置RedisTemplate规则
-     * @param redisConnectionFactory
-     * @return
-     */
+
+/*     设置RedisTemplate规则
+     @param redisConnectionFactory
+     @return*/
+
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<Object, Object> redisTemplate = new RedisTemplate<>();
@@ -73,11 +73,11 @@ public class RedisConfig {
         return redisTemplate;
     }
 
-    /**
+/*    *
      * 设置CacheManager缓存规则
-     * @param factory
-     * @return
-     */
+     * @param
+     * @return*/
+
     @Bean
     public CacheManager cacheManager(RedisConnectionFactory factory) {
         RedisSerializer<String> redisSerializer = new StringRedisSerializer();
@@ -101,4 +101,5 @@ public class RedisConfig {
                 .build();
         return cacheManager;
     }
+
 }
